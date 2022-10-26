@@ -70,7 +70,6 @@ var addTask=function(){
     bindTaskEvents(listItem, taskCompleted);
 
     taskInput.value="";
-
 }
 
 //Edit an existing task.
@@ -111,7 +110,6 @@ var deleteTask=function(){
     var ul=listItem.parentNode;
     //Remove the parent list item from the ul.
     ul.removeChild(listItem);
-
 }
 
 
@@ -123,7 +121,6 @@ var taskCompleted=function(){
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
-
 }
 
 
